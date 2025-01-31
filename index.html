@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- font awesome kit -->
+        <script
+            src="https://kit.fontawesome.com/e7eeb83822.js"
+            crossorigin="anonymous"
+        ></script>
+
+        <!-- Daisy UI installation -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css"
+            rel="stylesheet"
+            type="text/css"
+        />
+        <script src="https://cdn.tailwindcss.com"></script>
+
+        <!-- tailwind css -->
+        <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+
+        <!-- my css file -->
+        <link rel="stylesheet" href="style.css" />
+
+        <title>Nature's Platter</title>
+    </head>
+
+    <body class="sora_font">
+        <nav class="container mx-auto py-3">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div
+                            tabindex="0"
+                            role="button"
+                            class="btn btn-ghost lg:hidden"
+                        >
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="h-5 w-5"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16"
+                                />
+                            </svg>
+                        </div>
+                        <ul
+                            tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+                        >
+                            <li><a>Product</a></li>
+                            <li><a>Services</a></li>
+                            <li><a>Contact US</a></li>
+                        </ul>
+                    </div>
+                    <img
+                        class="hidden lg:block"
+                        src="assets/logo-header.png"
+                        alt="Logo"
+                    />
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a>Product</a></li>
+                        <li><a>Services</a></li>
+                        <li><a>Contact US</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end gap-x-3">
+                    <div class="mr-3">
+                        <i
+                            class="fa-solid fa-magnifying-glass text-2xl mx-2 cursor-pointer"
+                        ></i>
+                        <i
+                            class="fa-solid fa-cart-plus text-2xl mx-2 cursor-pointer"
+                        ></i>
+                    </div>
+                    <button
+                        class="py-1.5 px-5 rounded-lg border-2 border-[#179800]"
+                    >
+                        Login
+                    </button>
+                    <button
+                        class="py-2 px-5 bg-[#179800] rounded-lg text-white"
+                    >
+                        Register
+                    </button>
+                </div>
+            </div>
+        </nav>
+        <section class="">
+            <div class="container mx-auto text-center">
+                <!-- banner text -->
+                <div>
+                    <h1 class="text-5xl font-bold ">
+                        Freshness <span>You Can<br />Count</span> On, Prices
+                        You’ll Love!
+                    </h1>
+                    <p>
+                        Shop your daily essentials at unbeatable prices. From
+                        fresh produce to pantry staples, we’ve got you covered
+                        every day!
+                    </p>
+                </div>
+                <!-- banner image -->
+                <div class="">
+                    <img class="mx-auto" src="assets/hero-vegetables.png" alt="" />
+                </div>
+            </div>
+        </section>
+        <main></main>
+        <footer></footer>
+    </body>
+</html>

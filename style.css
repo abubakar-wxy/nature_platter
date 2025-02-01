@@ -6,3 +6,8 @@
   font-optical-sizing: auto;
   font-style: normal;
 }
+
+/* banner section */
+.banner_section{
+  background: linear-gradient(to top, #EFEBE3, white) !important;
+}

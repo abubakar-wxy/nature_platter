@@ -1,203 +1,468 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <!-- font awesome kit -->
-        <script
-            src="https://kit.fontawesome.com/e7eeb83822.js"
-            crossorigin="anonymous"
-        ></script>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <!-- Daisy UI installation -->
-        <link
-            href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css"
-            rel="stylesheet"
-            type="text/css"
-        />
-        <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font awesome kit -->
+    <script src="https://kit.fontawesome.com/e7eeb83822.js" crossorigin="anonymous"></script>
 
-        <!-- tailwind css -->
-        <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <!-- Daisy UI installation -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
 
-        <!-- my css file -->
-        <link rel="stylesheet" href="style.css" />
+    <!-- tailwind css -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
 
-        <title>Nature's Platter</title>
-    </head>
+    <!-- my css file -->
+    <link rel="stylesheet" href="style.css" />
 
-    <body class="sora_font">
-        <nav class="container mx-auto">
-            <div class="navbar bg-base-100 py-3">
-                <div class="navbar-start">
-                    <div class="dropdown">
-                        <div
-                            tabindex="0"
-                            role="button"
-                            class="btn btn-ghost lg:hidden"
-                        >
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                class="h-5 w-5"
-                                fill="none"
-                                viewBox="0 0 24 24"
-                                stroke="currentColor"
-                            >
-                                <path
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    stroke-width="2"
-                                    d="M4 6h16M4 12h8m-8 6h16"
-                                />
-                            </svg>
-                        </div>
-                        <ul
-                            tabindex="0"
-                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
-                        >
-                            <li><a>Product</a></li>
-                            <li><a>Services</a></li>
-                            <li><a>Contact US</a></li>
-                        </ul>
+    <title>Nature's Platter</title>
+</head>
+
+<body class="sora_font">
+    <nav class="container mx-auto">
+        <div class="navbar bg-base-100 py-3 flex-row-reverse lg:flex-row">
+            <div class="navbar-start hidden md:flex">
+                <div class="dropdown dropdown-end">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
                     </div>
-                    <img
-                        class="hidden lg:block"
-                        src="assets/logo-header.png"
-                        alt="Logo"
-                    />
-                </div>
-                <div class="navbar-center hidden lg:flex">
-                    <ul class="menu menu-horizontal px-1">
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
                         <li><a>Product</a></li>
                         <li><a>Services</a></li>
                         <li><a>Contact US</a></li>
                     </ul>
                 </div>
-                <div class="navbar-end gap-x-3">
-                    <div class="mr-3">
-                        <i
-                            class="fa-solid fa-magnifying-glass text-2xl mx-2 cursor-pointer"
-                        ></i>
-                        <i
-                            class="fa-solid fa-cart-plus text-2xl mx-2 cursor-pointer"
-                        ></i>
+                <img class="hidden lg:block" src="assets/logo-header.png" alt="Logo" />
+            </div>
+
+            <div class="navbar-end md:hidden">
+                <div class="dropdown dropdown-end">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
                     </div>
-                    <button
-                        class="py-1.5 px-5 rounded-lg border-2 border-[#179800]"
-                    >
-                        Login
-                    </button>
-                    <button
-                        class="py-2 px-5 bg-[#179800] rounded-lg text-white"
-                    >
-                        Register
-                    </button>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                        <li><a>Product</a></li>
+                        <li><a>Services</a></li>
+                        <li><a>Contact US</a></li>
+                    </ul>
+                </div>
+                <img class="hidden lg:block" src="assets/logo-header.png" alt="Logo" />
+            </div>
+
+
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a>Product</a></li>
+                    <li><a>Services</a></li>
+                    <li><a>Contact US</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end gap-x-3 hidden lg:inline-flex">
+                <div class="mr-2">
+                    <i class="fa-solid fa-magnifying-glass text-2xl mx-2 cursor-pointer"></i>
+                    <i class="fa-solid fa-cart-plus text-2xl mx-2 cursor-pointer"></i>
+                </div>
+                <button class="py-1.5 px-5 rounded-lg border-2 border-[#179800]">
+                    Login
+                </button>
+                <button class="py-2 px-5 bg-[#179800] rounded-lg text-white">
+                    Register
+                </button>
+            </div>
+
+
+            <div class="navbar-start ml-2 lg:hidden">
+                <img class="w-8" src="assets/mobile-nav.png" alt="">
+            </div>
+        </div>
+    </nav>
+    <main class="mb-96">
+
+
+        <section class="mt-10 banner_section px-5">
+            <div class="container mx-auto text-center">
+                <!-- banner text -->
+                <div>
+                    <h1 class="text-5xl font-bold leading-tight lg:w-5/12 mx-auto md:animate-bounce">
+                        Freshness
+                        <span class="text-[#179800]">You Can Count</span>
+                        On, Prices You’ll Love!
+                    </h1>
+                    <p class="mt-14 text-xl lg:w-6/12 mb-7 mx-auto">
+                        Shop your daily essentials at unbeatable prices.
+                        From fresh produce to pantry staples, we’ve got you
+                        covered every day!
+                    </p>
+                </div>
+                <!-- banner image -->
+                <div class="">
+                    <img class="mx-auto animate-bounce md:animate-none" src="assets/hero-vegetables.png" alt="" />
                 </div>
             </div>
-        </nav>
-        <main>
-            <section class="mt-10 banner_section px-5">
-                <div class="container mx-auto text-center">
-                    <!-- banner text -->
-                    <div>
-                        <h1
-                            class="text-5xl font-bold leading-tight lg:w-5/12 mx-auto animate-bounce"
-                        >
-                            Freshness
-                            <span class="text-[#179800]">You Can Count</span>
-                            On, Prices You’ll Love!
-                        </h1>
-                        <p class="mt-14 text-xl lg:w-6/12 mb-7 mx-auto">
-                            Shop your daily essentials at unbeatable prices.
-                            From fresh produce to pantry staples, we’ve got you
-                            covered every day!
+        </section>
+
+
+        <!-- Services section -->
+        <section class="px-5">
+            <div class="container mx-auto my-30">
+                <h2 class="text-3xl font-bold mb-10 text-[#179800]">
+                    Services
+                </h2>
+                <div class="grid md:grid-cols-3 gap-10">
+                    <div class="bg-[#EFEBE3] p-10 rounded-2xl text-center">
+                        <img class="mx-auto p-5 bg-white rounded-full" src="assets/service.png" alt="" />
+                        <h3 class="text-2xl font-bold my-5">
+                            24/7 Services
+                        </h3>
+                        <p class="text-lg">
+                            The primary characteristic is that customers can
+                            access the service whenever they need it,
+                            without any time restrictions.
                         </p>
                     </div>
-                    <!-- banner image -->
-                    <div class="">
-                        <img
-                            class="mx-auto"
-                            src="assets/hero-vegetables.png"
-                            alt=""
-                        />
+
+                    <div class="bg-[#EFEBE3] p-10 rounded-2xl text-center">
+                        <img class="mx-auto p-5 bg-white rounded-full" src="assets/delivery.png" alt="" />
+                        <h3 class="text-2xl font-bold my-5">
+                            Fast Delivery
+                        </h3>
+                        <p class="text-lg">
+                            Faster delivery makes it convenient for
+                            customers to receive goods in less time. Quick
+                            deliveries offer instant gratification
+                        </p>
+                    </div>
+
+                    <div class="bg-[#EFEBE3] p-10 rounded-2xl text-center">
+                        <img class="mx-auto p-5 bg-white rounded-full" class="mx-auto" src="assets/healthy.png"
+                            alt="" />
+                        <h3 class="text-2xl font-bold my-5">
+                            Healthy Products
+                        </h3>
+                        <p class="text-lg">
+                            Healthy food is food that contains the right
+                            amount of nutrients to support good health.
+                            Eating a healthy diet can help you feel your
+                            best
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Popular Products section -->
+        <section class="bg-[#EFEBE3] lg:py-32 py-12">
+            <div class="container mx-auto px-5">
+                <h1 class="text-3xl font-bold mb-10 text-[#179800]">Popular Products</h1>
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-0 lg:gap-5 space-y-3 lg:space-y-0">
+
+                    <!-- big card  -->
+                    <div class="relative col-span-1 rounded-xl pl-10 offer_div lg:pb-10 pb-25">
+                        <h4 class="text-3xl font-bold text-white mt-10">30% off</h4>
+                        <p class="my-5 w-72">Discover a world of treats, toys, and essentials handpicked for </p>
+                        <button class="btn bg-white px-6 font-bold">Buy Now</button>
+                        <div class="ml-[40%]">
+                            <img class="w-[50%] lg:w-[65%] absolute right-0 bottom-0" src="assets/vegetable-offer.png"
+                                alt="">
+                        </div>
+                    </div>
+
+                    <!-- ALL popular products -->
+                    <div class="col-span-2 mt-0">
+                        <div class="grid grid-cols-2 lg:grid-cols-3 gap-3 lg:gap-5 mt-0">
+                            <div class="flex items-center gap-4 p-3 rounded-md bg-white">
+                                <img class="bg-[#EFEBE3] w-4/12 rounded-xl" src="assets/onion.png" alt="">
+                                <div class="">
+                                    <p class="text-lg"><i class="fa-solid fa-star pr-1 text-yellow-400"></i> 4.5</p>
+                                    <h5 class="lg:text-xl lg:font-bold font-semibold">Onion 1kg</h5>
+                                    <p class="text-lg:text-lg font-medium lg:font-semibold">$39.99</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-4 p-3 rounded-md bg-white">
+                                <img class="bg-[#EFEBE3] w-4/12 rounded-xl" src="assets/tomato.png" alt="">
+                                <div class="">
+                                    <p class="text-lg"><i class="fa-solid fa-star pr-1 text-yellow-400"></i> 4.5</p>
+                                    <h5 class="lg:text-xl lg:font-bold font-semibold">Tomato 1kg</h5>
+                                    <p class="text-lg:text-lg font-medium lg:font-semibold">$19.99</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-4 p-3 rounded-md bg-white">
+                                <img class="bg-[#EFEBE3] w-4/12 rounded-xl" src="assets/potato.png" alt="">
+                                <div class="">
+                                    <p class="text-lg"><i class="fa-solid fa-star pr-1 text-yellow-400"></i> 4.5</p>
+                                    <h5 class="lg:text-xl lg:font-bold font-semibold">Potato 1kg</h5>
+                                    <p class="text-lg:text-lg font-medium lg:font-semibold">$29.99</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-4 p-3 rounded-md bg-white">
+                                <img class="bg-[#EFEBE3] w-4/12 rounded-xl" src="assets/tomato.png" alt="">
+                                <div class="">
+                                    <p class="text-lg"><i class="fa-solid fa-star pr-1 text-yellow-400"></i> 4.5</p>
+                                    <h5 class="lg:text-xl lg:font-bold font-semibold">Tomato 500 g</h5>
+                                    <p class="text-lg:text-lg font-medium lg:font-semibold">$29.99</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-4 p-3 rounded-md bg-white">
+                                <img class="bg-[#EFEBE3] w-4/12 rounded-xl" src="assets/onion.png" alt="">
+                                <div class="">
+                                    <p class="text-lg"><i class="fa-solid fa-star pr-1 text-yellow-400"></i> 4.5</p>
+                                    <h5 class="lg:text-xl lg:font-bold font-semibold">Onion 500 g</h5>
+                                    <p class="text-lg:text-lg font-medium lg:font-semibold">$29.99</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-4 p-3 rounded-md bg-white">
+                                <img class="bg-[#EFEBE3] w-4/12 rounded-xl" src="assets/tomato.png" alt="">
+                                <div class="">
+                                    <p class="text-lg"><i class="fa-solid fa-star pr-1 text-yellow-400"></i> 4.5</p>
+                                    <h5 class="lg:text-xl lg:font-bold font-semibold">Tomato 500 g</h5>
+                                    <p class="text-lg:text-lg font-medium lg:font-semibold">$29.99</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-4 p-3 rounded-md bg-white">
+                                <img class="bg-[#EFEBE3] w-4/12 rounded-xl" src="assets/onion.png" alt="">
+                                <div class="">
+                                    <p class="text-lg"><i class="fa-solid fa-star pr-1 text-yellow-400"></i> 4.5</p>
+                                    <h5 class="lg:text-xl lg:font-bold font-semibold">Onion 1.5 kg</h5>
+                                    <p class="text-lg:text-lg font-medium lg:font-semibold">$49.99</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-4 p-3 rounded-md bg-white">
+                                <img class="bg-[#EFEBE3] w-4/12 rounded-xl" src="assets/potato.png" alt="">
+                                <div class="">
+                                    <p class="text-lg"><i class="fa-solid fa-star pr-1 text-yellow-400"></i> 4.5</p>
+                                    <h5 class="lg:text-xl lg:font-bold font-semibold">Potato 1.5 kg</h5>
+                                    <p class="text-lg:text-lg font-medium lg:font-semibold">$49.99</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-4 p-3 rounded-md bg-white hidden md:inline-flex ">
+                                <img class="bg-[#EFEBE3] w-4/12 rounded-xl" src="assets/potato.png" alt="">
+                                <div class="">
+                                    <p class="text-lg"><i class="fa-solid fa-star pr-1 text-yellow-400"></i> 4.5</p>
+                                    <h5 class="lg:text-xl lg:font-bold font-semibold">Potato 1.5 kg</h5>
+                                    <p class="text-lg:text-lg font-medium lg:font-semibold">$49.99</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <!-- Arrival & Offers -->
+        <section>
+            <div class="container mx-auto my-32 px-5">
+                <h1 class="text-3xl font-bold mb-10 text-[#179800]">Arrival & Offers</h1>
+                <div class="grid lg:grid-cols-9 grid-cols-1 gap-5 lg:gap-10 mt-12">
+                    <div class="lg:col-span-5 rounded-3xl flex justify-around items-center p-10 pr-0 bg-green-700">
+                        <div class="lg:space-y-3 space-y-1">
+                            <img class="mb-3 lg:w-full" src="assets/dawat-logo.png" alt="">
+                            <button
+                                class="mb-3 btn text-sm lg:text-2xl font-normal lg:px-7 btn-success text-white bg-green-500">Cook
+                                Exotic <span class="lg:block hidden">Dishes</span></button>
+                            <h2 class="lg:text-4xl text-xl text-white">UP to <span class="font-bold">20% OFF</span></h2>
+                        </div>
+                        <img class="w-[55%]" src="assets/dawat-mock-up.png" alt="">
+                    </div>
+                    <div class="lg:col-span-4 rounded-3xl flex justify-around items-center p-10 bg-blue-700">
+                        <div class="lg:space-y-3">
+                            <img class="" src="assets/india-gate-logo.png" alt="">
+                            <button
+                                class="btn text-sm lg:text-2xl font-normal lg:px-5 btn-success text-white bg-blue-500">World’s
+                                No.1 Rice</button>
+                            <h2 class="lg:text-4xl text-xl text-white">UP to <span class="font-bold">20% OFF</span></h2>
+                        </div>
+                        <img class="w-[40%]" src="assets/india-gate-mock-up.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Review section -->
+        <section class="px-5 bg-[#EFEBE3]">
+            <div class="container pb-12 mx-auto md:pb-20 pt-10">
+                <div class="py-4 md:py-8">
+                    <h4 class="text-3xl font-bold text-[#179800]">Reviews</h4>
+                </div>
+
+                <div class="gap-8 space-y-8 md:columns-2 lg:columns-3">
+
+                    <div
+                        class="p-8 bg-white border border-gray-100 shadow-2xl aspect-auto rounded-3xl shadow-gray-600/10">
+                        <div class="flex gap-4 items-start">
+                            <img class="w-12 h-12 rounded-full" src="assets/reviewer/01.jpg" alt="user avatar"
+                                width="400" height="400" loading="lazy">
+                            <div class="flex-1 flex justify-between items-start">
+                                <div>
+                                    <h6 class="text-lg font-medium text-gray-700">Ravi Kumar</h6>
+                                    <p class="text-sm text-gray-500">Car Enthusiast</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="mt-8">The quality of these seat covers is outstanding. They fit perfectly and add a
+                            touch
+                            of
+                            luxury to
+                            my car's interior. Highly recommend!</p>
+                    </div>
+
+                    <div
+                        class="p-8 bg-white border border-gray-100 shadow-2xl aspect-auto rounded-3xl shadow-gray-600/10">
+                        <div class="flex gap-4 items-start">
+                            <img class="w-12 h-12 rounded-full" src="assets/reviewer/04.jpg" alt="user avatar"
+                                width="200" height="200" loading="lazy">
+                            <div class="flex-1 flex justify-between items-start">
+                                <div>
+                                    <h6 class="text-lg font-medium text-gray-700">Anjali Sharma</h6>
+                                    <p class="text-sm text-gray-500">Marketing Professional</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="mt-8">I love the customizable designs! I was able to choose the perfect color to match
+                            my car's interior. The material feels very durable.</p>
+                    </div>
+
+                    <div
+                        class="p-8 bg-white border border-gray-100 shadow-2xl aspect-auto rounded-3xl shadow-gray-600/10">
+                        <div class="flex gap-4 items-start">
+                            <img class="w-12 h-12 rounded-full" src="assets/reviewer/02.jpg" alt="user avatar"
+                                width="200" height="200" loading="lazy">
+                            <div class="flex-1 flex justify-between items-start">
+                                <div>
+                                    <h6 class="text-lg font-medium text-gray-700">Vijay Singh</h6>
+                                    <p class="text-sm text-gray-500">Software Developer</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="mt-8">These seat covers are a game-changer for long drives. The added padding and
+                            ergonomic design
+                            make
+                            a huge difference in comfort.</p>
+                    </div>
+
+                    <div
+                        class="p-8 bg-white border border-gray-100 shadow-2xl aspect-auto rounded-3xl shadow-gray-600/10">
+                        <div class="flex gap-4 items-start">
+                            <img class="w-12 h-12 rounded-full" src="assets/reviewer/05.jpg" alt="user avatar"
+                                width="200" height="200" loading="lazy">
+                            <div class="flex-1 flex justify-between items-start">
+                                <div>
+                                    <h6 class="text-lg font-medium text-gray-700">Priya Patel</h6>
+                                    <p class="text-sm text-gray-500">Mobile Developer</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="mt-8">The installation was super easy, and the instructions were clear. My car looks
+                            and
+                            feels
+                            much more
+                            upscale now.</p>
+                    </div>
+
+                    <div
+                        class="p-8 bg-white border border-gray-100 shadow-2xl aspect-auto rounded-3xl shadow-gray-600/10">
+                        <div class="flex gap-4 items-start">
+                            <img class="w-12 h-12 rounded-full" src="assets/reviewer/03.jpg" alt="user avatar"
+                                width="200" height="200" loading="lazy">
+                            <div class="flex-1 flex justify-between items-start">
+                                <div>
+                                    <h6 class="text-lg font-medium text-gray-700">Arjun Mehta</h6>
+                                    <p class="text-sm text-gray-500">Manager</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="mt-8">Great value for money. The seat covers have a premium feel and have
+                            significantly
+                            improved
+                            the
+                            look of my car's interior.</p>
+                    </div>
+
+                    <div
+                        class="p-8 bg-white border border-gray-100 shadow-2xl aspect-auto rounded-3xl shadow-gray-600/10">
+                        <div class="flex gap-4 items-start">
+                            <img class="w-12 h-12 rounded-full" src="assets/reviewer/06.jpg" alt="user avatar"
+                                width="400" height="400" loading="lazy">
+                            <div class="flex-1 flex justify-between items-start">
+                                <div>
+                                    <h6 class="text-lg font-medium text-gray-700">Sneha Rao</h6>
+                                    <p class="text-sm text-gray-500">Product Designer</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="mt-8">Absolutely love these seat covers. They're stylish, comfortable, and were really
+                            easy to
+                            install.
+                            My car interior looks brand new!</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+
+    <footer class="bg-[#179800] relative lg:pb-15">
+        <div class="container mx-auto">
+            <!-- Get Grocery News -->
+            <section class="lg:-mt-[15%] -mt-[80%] absolute bg-[#EFEBE3] rounded-xl mx-8">
+
+                <div class=" flex lg:justify-around lg:gap-28 lg:flex-row flex-col p-5 lg:px-48 lg:py-20">
+                    <div class="flex-1">
+                        <img src="assets/vegetable-busket.png" alt="">
+                    </div>
+                    <div class="text-center flex-1 lg:text-left">
+                        <h1 class="text-4xl text-c-Accent font-bold">Get Grocery News!</h1>
+                        <p class="py-6 text-xl">Exclusive training tips, ticks, product deals and more.</p>
+                        <input type="email" placeholder="Enter email...." class="input w-5/6 input-bordered" required />
+                        <div class="mt-6">
+                            <button class="btn px-10 text-white bg-[#179800]">Subscribe</button>
+                        </div>
                     </div>
                 </div>
             </section>
 
-            <section class="px-5">
-                <div class="container mx-auto my-30">
-                    <h2 class="text-3xl font-bold mb-10 text-[#179800]">
-                        Services
-                    </h2>
-                    <div class="grid md:grid-cols-3 gap-10">
-                        <div class="bg-[#EFEBE3] p-10 rounded-2xl text-center">
-                            <img
-                                class="mx-auto p-5 bg-white rounded-full"
-                                src="assets/service.png"
-                                alt=""
-                            />
-                            <h3 class="text-2xl font-bold my-5">
-                                24/7 Services
-                            </h3>
-                            <p class="text-lg">
-                                The primary characteristic is that customers can
-                                access the service whenever they need it,
-                                without any time restrictions.
-                            </p>
-                        </div>
-
-                        <div class="bg-[#EFEBE3] p-10 rounded-2xl text-center">
-                            <img
-                                class="mx-auto p-5 bg-white rounded-full"
-                                src="assets/delivery.png"
-                                alt=""
-                            />
-                            <h3 class="text-2xl font-bold my-5">
-                                Fast Delivery
-                            </h3>
-                            <p class="text-lg">
-                                Faster delivery makes it convenient for
-                                customers to receive goods in less time. Quick
-                                deliveries offer instant gratification
-                            </p>
-                        </div>
-
-                        <div class="bg-[#EFEBE3] p-10 rounded-2xl text-center">
-                            <img
-                                class="mx-auto p-5 bg-white rounded-full"
-                                class="mx-auto"
-                                src="assets/healthy.png"
-                                alt=""
-                            />
-                            <h3 class="text-2xl font-bold my-5">
-                                Healthy Products
-                            </h3>
-                            <p class="text-lg">
-                                Healthy food is food that contains the right
-                                amount of nutrients to support good health.
-                                Eating a healthy diet can help you feel your
-                                best
-                            </p>
-                        </div>
+            <!-- footer start  -->
+            <div class="grid lg:grid-cols-3 grid-cols-1 lg:justify-items-center ml-6 pb-6 pt-80 text-white">
+                <div class="lg:ml-20 space-y-5">
+                    <img src="assets/logo-footer.png" alt="">
+                    <p class="text-lg">Discover a world of treats, toys, and essentials handpicked for your furry
+                        friends</p>
+                </div>
+                <div class="mt-5 space-y-5">
+                    <p class="text-lg">Product</p>
+                    <p class="text-lg">Services</p>
+                    <p class="text-lg">Contact</p>
+                </div>
+                <div class="mt-5 space-y-5">
+                    <p>Follow Us</p>
+                    <div class="space-x-3">
+                        <i class="text-xl fa-brands fa-facebook"></i>
+                        <i class="text-xl fa-brands fa-instagram"></i>
+                        <i class="text-xl fa-brands fa-linkedin"></i>
+                        <i class="text-xl fa-brands fa-youtube"></i>
                     </div>
                 </div>
-            </section>
+            </div>
+        </div>
+    </footer>
 
-            <section>
-                <div class="container mx-auto my-30">
-                    <h2 class="text-3xl font-bold mb-10 text-[#179800]">
-                        Popular Products
-                    </h2>
-                    <div class="">
-                        <div>
-                            
-                        </div>
-                        <div></div>
-                    </div>
-                </div>
-            </section>
-        </main>
-        <footer></footer>
-    </body>
+
+</body>
+
 </html>

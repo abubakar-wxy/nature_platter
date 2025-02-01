@@ -11,3 +11,7 @@
 .banner_section {
     background: linear-gradient(to top, #efebe3, white) !important;
 }
+
+.offer_div {
+    background: linear-gradient(to bottom right, #179800, white);
+}
